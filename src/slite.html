@@ -6,7 +6,756 @@
     <link href="./output.css" rel="stylesheet" />
     <title>slite</title>
   </head>
-  <body>
+  <body class="bg-primary">
     <!-- ======================================================= HEADER ======================================================= -->
+    <nav class="w-full py-3 md:py-6 xl:py-8">
+      <div
+        class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0 flex items-center justify-between"
+      >
+        <a href="slite.html"
+          ><img src="./assets/header/logo.png" alt="logo"
+        /></a>
+        <div class="block lg:hidden">
+          <button class="bg-secondary text-primary p-2 rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+          <div
+            class="flex items-center gap-4 text-secondary text-base font-medium leading-[27px] font-inter"
+          >
+            <a href="#" class="flex items-center gap-[10px]"
+              >Product
+              <img src="./assets/header/arrow-down-icon.svg" alt="arrow down" />
+            </a>
+            <a href="#" class="flex items-center gap-[10px]"
+              >Solutions
+              <img src="./assets/header/arrow-down-icon.svg" alt="arrow down" />
+            </a>
+            <a href="#" class="text-secondary">Pricing </a>
+            <a href="#" class="flex items-center gap-[10px]"
+              >Resources
+              <img src="./assets/header/arrow-down-icon.svg" alt="arrow down" />
+            </a>
+          </div>
+          <div
+            class="flex items-center gap-4 text-secondary text-sm font-medium font-inter leading-[27px]"
+          >
+            <a href="#">Sign in</a>
+            <a
+              href="#"
+              class="border border-secondary rounded-full px-4 py-2 hover:bg-secondary hover:text-primary duration-200 transition-all"
+              >Book a demo</a
+            >
+            <a
+              href="#"
+              class="bg-secondary text-primary rounded-full px-4 py-2 hover:bg-primary hover:text-secondary border border-secondary duration-200 transition-all"
+              >Start for free</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======================================================= HERO SECTION ======================================================= -->
+    <section class="w-full my-4">
+      <div class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0">
+        <div class="flex flex-col-reverse justify-center w-full md:flex-col">
+          <div class="flex justify-center relative mt-4">
+            <img
+              class="absolute hidden md:block md:-bottom-80 md:-left-0 xl:top-20 xl:left-10"
+              src="./assets/section1/image2.png"
+              alt="image"
+            />
+            <img
+              class="absolute hidden md:block md:-bottom-32 md:left-10 xl:top-4 xl:left-40"
+              src="./assets/section1/image3.png"
+              alt="image"
+            />
+            <img
+              class="absolute hidden md:block md:top-10 md:left-36 lg:left-48 xl:left-80"
+              src="./assets/section1/image4.png"
+              alt="image"
+            />
+            <img src="./assets/section1/image5.png" alt="image" />
+            <img
+              class="absolute hidden md:block md:top-10 md:right-36 lg:right-48 xl:right-80"
+              src="./assets/section1/image6.png"
+              alt="image"
+            />
+            <img
+              class="absolute hidden md:block md:top-28 md:right-10 xl:right-40 xl:top-0"
+              src="./assets/section1/image7.png"
+              alt="image"
+            />
+            <img
+              class="absolute hidden md:block md:-bottom-56 md:right-0 xl:top-20"
+              src="./assets/section1/image8.png"
+              alt="image"
+            />
+            <img
+              class="absolute hidden md:block md:-bottom-96 md:right-10 xl:hidden"
+              src="./assets/section1/image9.png"
+              alt="image"
+            />
+          </div>
+          <div
+            class="md:flex justify-center flex-col items-center md:gap-8 xl:flex-row"
+          >
+            <div class="hidden xl:block xl:w-1/3 xl:relative">
+              <img
+                class="xl:absolute xl:z-10 xl:-top-20 xl:left-32"
+                src="./assets/section1/image1.png"
+                alt="image"
+              />
+              <img
+                class="xl:absolute xl:h-96 xl:w-96 xl:-right-20 xl:-top-10"
+                src="./assets/section1/image17.png"
+                alt="image"
+              />
+            </div>
+            <div class="xl:relative text-center font-inter mt-4 md:w-3/4">
+              <h1
+                class="text-3xl text-secondary font-medium leading-tight tracking-tight lg:text-6xl"
+              >
+                Your company knowledge base, on autopilot.
+              </h1>
+              <p
+                class="text-base text-secondary font-medium leading-tight mt-4 lg:text-lg xl:mt-4"
+              >
+                Free up your team from the burdens of creating, managing and
+                finding trusted company information. Single source of truth is
+                finally possible with Slite's collaborative knowledge base,
+                powered by AI.
+              </p>
+              <form
+                class="mt-8 flex flex-col gap-4 items-center lg:flex-row lg:justify-center lg:relative"
+              >
+                <input
+                  type="text"
+                  placeholder="name@company.com"
+                  class="text-secondary lg:w-3/4 text-[11.6px] placeholder:text-[#98999A] placeholder:text-[11.6px] placeholder:font-medium border border-secondary rounded-full bg-primary p-4"
+                />
+                <button
+                  class="text-white rounded-full p-4 bg-[#176AE5] text-[11.6px] w-fit lg:absolute lg:right-14 lg:h-full"
+                >
+                  Sign up for free
+                </button>
+              </form>
+              <p class="mt-4 text-xs font-medium leading-tight lg:text-sm">
+                14-days free trial. No credit card needed
+              </p>
+            </div>
+            <div class="hidden xl:block xl:w-1/4 xl:relative">
+              <img
+                class="xl:absolute xl:z-10 xl:-top-32 xl:right-10"
+                src="./assets/section1/image9.png"
+                alt="image"
+              />
+              <img
+                class="xl:absolute xl:h-96 xl:w-96 xl:right-6 xl:-top-14"
+                src="./assets/section1/image16.png"
+                alt="image"
+              />
+            </div>
+            <div class="hidden mt-8 md:flex items-center gap-8 xl:hidden">
+              <div>
+                <img src="./assets/section1/image1.png" alt="image" />
+                <img src="./assets/section1/image17.png" alt="image" />
+              </div>
+              <div class="xl:w-1/3">
+                <img src="./assets/section1/image16.png" alt="image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= SECTION #2 ======================================================= -->
+
+    <section class="w-full xl:mt-72 my-16">
+      <div class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0">
+        <div
+          class="flex flex-col-reverse items-center md:flex-row md:justify-between gap-8 lg:gap-0"
+        >
+          <div
+            class="border-secondary w-full border rounded-lg mt-8 lg:w-1/2 md:h-full"
+          >
+            <div
+              class="bg-black h-48 md:h-80 flex items-center justify-center rounded-lg border-primary border-4"
+            >
+              <button
+                class="text-white text-xs font-black uppercase font-inter bg-[#176AE5] px-4 py-2 rounded-full"
+              >
+                Play
+              </button>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-[22.9px] font-normal">Designed for</h4>
+            <ol
+              class="list-decimal px-8 text-[18.7px] text-[#98999A] font-inter font-normal leading-tight flex flex-col gap-8 mt-8"
+            >
+              <li>All types of knowledge</li>
+              <li>Instant trusted answers</li>
+              <li>Knowledge management at scale</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= SECTION #3 ======================================================= -->
+
+    <section class="w-full xl:mt-40 my-16">
+      <div
+        class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0 flex flex-col items-center"
+      >
+        <div
+          class="text-center text-secondary font-inter font-medium leading-tight"
+        >
+          <h2 class="text-3xl">Designed for all types of knowledge.</h2>
+          <p class="mt-8 text-base">
+            From onboarding guides to all-hands notes,
+            <br class="hidden lg:block" />Slite is flexible to easily document
+            all types of company knowledge.
+          </p>
+        </div>
+        <div
+          class="mt-8 w-full flex flex-col gap-8 lg:flex-row lg:justify-between"
+        >
+          <div
+            class="text-base font-medium font-inter leading-tight flex flex-wrap items-center justify-center overflow-auto text-nowrap lg:flex-col lg:justify-between lg:items-start lg:text-left"
+          >
+            <a href="#" class="border border-secondary p-4 rounded-full"
+              >Company wiki</a
+            >
+            <a
+              href="#"
+              class="border p-4 rounded-full opacity-50 hover:border-secondary hover:opacity-100 duration-200 transition-all"
+              >Meeting notes</a
+            >
+            <a
+              href="#"
+              class="border p-4 rounded-full opacity-50 hover:border-secondary hover:opacity-100 duration-200 transition-all"
+              >Handbook</a
+            >
+            <a
+              href="#"
+              class="border p-4 rounded-full opacity-50 hover:border-secondary hover:opacity-100 duration-200 transition-all"
+              >onboearding</a
+            >
+            <a
+              href="#"
+              class="border p-4 rounded-full opacity-50 hover:border-secondary hover:opacity-100 duration-200 transition-all"
+              >Process</a
+            >
+            <a
+              href="#"
+              class="border p-4 rounded-full opacity-50 hover:border-secondary hover:opacity-100"
+              >OKRs</a
+            >
+          </div>
+          <div class="p-2 border-secondary border rounded-lg">
+            <img
+              class="rounded-md object-cover w-full"
+              src="./assets/section3/img.png"
+              alt="img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= SECTION #4 ======================================================= -->
+
+    <section class="w-full xl:mt-40 my-16">
+      <div
+        class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0 flex flex-col items-center gap-8"
+      >
+    <div class="text-center text-secondary font-inter font-medium">
+      <p class="text-xl md:text-2xl">Improve your writing with AI.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-16 ">
+      <div class="group cursor-pointer">
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <img class="h-16 w-16 group-hover:scale-110  duration-300 transition-all" src="./assets/section4/icon1.png" alt="icon" />
+        <div class="text-center md:text-left font-inter md:mt-0 text-secondary">
+          <h4 class=" text-base font-bold leading-tight md:text-lg">Translate</h4>
+          <p class="text-sm font-medium md:text-base">Write in your preferred language</p>
+        </div>
+      </div>
+      </div>
+      <div class="group cursor-pointer">
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <img class="h-16 w-16 group-hover:scale-110  duration-300 transition-all" src="./assets/section4/icon2.png" alt="icon" />
+        <div class="text-center md:text-left font-inter md:mt-0 text-secondary">
+          <h4 class=" text-base font-bold leading-tight md:text-lg">Fix spelling & grammar</h4>
+          <p class="text-sm font-medium md:text-base">Prioritize thoughts over perfection</p>
+        </div>
+      </div>
+      </div>
+      <div class="group cursor-pointer">
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <img class="h-16 w-16 group-hover:scale-110  duration-300 transition-all" src="./assets/section4/icon3.png" alt="icon" />
+        <div class="text-center md:text-left font-inter md:mt-0 text-secondary">
+          <h4 class=" text-base font-bold leading-tight md:text-lg">Make shorter</h4>
+          <p class="text-sm font-medium md:text-base">Get rid of the bits you don't need</p>
+        </div>
+      </div>
+      </div>
+      <div class="group cursor-pointer">
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <img class="h-16 w-16 group-hover:scale-110  duration-300 transition-all" src="./assets/section4/icon4.png" alt="icon" />
+        <div class="text-center md:text-left font-inter md:mt-0 text-secondary">
+          <h4 class=" text-base font-bold leading-tight md:text-lg">Change tone</h4>
+          <p class="text-sm font-medium md:text-base">Cater to every audience</p>
+        </div>
+      </div>
+      </div>
+      <div class="group cursor-pointer">
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <img class="h-16 w-16 group-hover:scale-110  duration-300 transition-all" src="./assets/section4/icon5.png" alt="icon" />
+        <div class="text-center md:text-left font-inter md:mt-0 text-secondary">
+          <h4 class=" text-base font-bold leading-tight md:text-lg">Simplify language</h4>
+          <p class="text-sm font-medium md:text-base">Make docs accessible to everyone</p>
+        </div>
+      </div>
+      </div>
+      <div class="group cursor-pointer">
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <img class="h-16 w-16 group-hover:scale-110  duration-300 transition-all" src="./assets/section4/icon6.png" alt="icon" />
+        <div class="text-center md:text-left font-inter md:mt-0 text-secondary">
+          <h4 class=" text-base font-bold leading-tight md:text-lg">Summarize</h4>
+          <p class="text-sm font-medium md:text-base">Get a TLDR for a doc of any length</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- ======================================================= SECTION #5 ======================================================= -->
+
+    <section class="w-full xl:mt-40 my-16">
+      <div
+        class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0 flex flex-col items-center gap-8 text-center"
+      >
+    <p class="text-lg text-secondary font-inter font-medium md:text-2xl">200,000+ growing startups use Slite as their single source of truth.</p>
+  <div class="grid grid-cols-1 md:grid-cols-3  xl:grid-cols-6 gap-4 md:gap-8 lg:gap-16 place-content-center items-center">
+    <img src="./assets/section5/logo1.png" alt="logo" />
+    <img src="./assets/section5/logo2.png" alt="logo" />
+    <img src="./assets/section5/logo3.png" alt="logo" />
+    <img src="./assets/section5/logo4.png" alt="logo" />
+    <img src="./assets/section5/logo5.png" alt="logo" />
+    <img src="./assets/section5/logo6.png" alt="logo" />
+  </div>
+</div>
+    </section>
+
+    <!-- ======================================================= SECTION #6 ======================================================= -->
+
+    <img class="w-full object-cover" src="./assets/bg.png" alt="bg" />
+    <div class="bg-secondary px-3 lg:px-6 xl:px-0">
+      <div class="max-w-6xl mx-auto text-center font-inter py-8 flex flex-col justify-center items-center">
+        <h3 class="text-offwhite font-medium text-3xl">So, what makes Slite so different?</h3>
+        <div class="mt-8 font-inter text-center flex flex-col items-center justify-center gap-4">
+          <p class="bg-[#9958E1] uppercase w-fit p-1 rounded-full text-offwhite font-bold text-xs">AI powered</p>
+          <p class="text-offwhite text-xl font-medium md:text-[27px]">Just ask, it answers.</p>
+        </div>
+        <p class="text-[#98999A] text-xs font-extrabold mt-8 uppercase font-inter">Generating answers in seconds</p>
+        <img class="mt-8" src="./assets/section6/image.png" alt="image" />
+        <p class="mt-16 text-base md:text-lg text-offwhite font-inter font-medium text-center md:w-2/4">“No result matches your search” is not an answer. Yet, the info lives somewhere in your knowledge base. Our AI-powered assistant will surface the info and cross-check your sources to give the accurate answer, in an instant.</p>
+        <a class="mt-16 text-sm font-inter font-medium text-offwhite flex items-center group">How it works <img class="ml-2 group-hover:ml-4 duration-200 transition-all" src="./assets/section6/arrow.png" alt="arrow icon" /></a>
+        <div class="border border-white rounded-lg flex items-center flex-col p-2 my-16 md:py-16">
+          <p class="text-lg text-normal text-offwhite md:w-2/3">“With instant access to our knowledge base, we no longer waste time searching for information. Instead of answering repetitive questions in Slack, our team goes straight to the source with Slite's Ask.”</p>
+          <div class="mt-8 flex items-center">
+            <img src="./assets/section6/avatar.png" alt="img" />
+            <div class="text-[#98999A] text-left ml-4 font-inter">
+              <h4 class="font-bold text-base md:text-xl">Laura Dutilh</h4>
+              <p class="uppercase text-sm md:text-base">Chief of Staff at Tymeshift</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center text-center font-inter">
+          <h4 class="text-xl font-medium text-offwhite md:text-2xl">When knowledge management feels like self-managing.</h4>
+          <p class="mt-4 text-offwhite text-sm md:text-lg font-medium md:w-2/3">Escape the maze of outdated docs, dead ends, clutter and overwhelming manual work. Enjoy effortless knowledge management at scale.</p>
+        </div>
+        <div class=" bg-white/10 rounded-lg flex flex-col items-center justify-center gap-4 mt-16 p-12 md:p-16 lg:flex-row">
+          <div class="flex flex-col items-center lg:items-start md:w-1/2 font-inter">
+            <p class="bg-[#9958E1] uppercase w-fit p-1 rounded-full text-offwhite font-bold text-xs">AI powered</p>
+            <h4 class="mt-4 text-offwhite text-xl font-inter font-medium lg:text-left md:text-2xl">Get smart insights at your fingertips.</h4>
+            <p class="text-xs text-offwhite font-inter font-medium mt-4 lg:text-left  md:text-base ">Keep your docs dusted off and up to date with AI-driven insights and recommendations. All you have to do is act on them, with just a single click.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src="./assets/section6/gridimg1.png" alt="gridimg" />
+            <img src="./assets/section6/gridimg2.png" alt="gridimg" />
+            <img src="./assets/section6/gridimg3.png" alt="gridimg" />
+            <img src="./assets/section6/gridimg4.png" alt="gridimg" />
+          </div>
+        </div>
+        <div class="mt-16 flex flex-col items-center gap-16 lg:flex-row lg:items-start h-full">
+          <div class="bg-white/10 rounded-lg">
+            <div class="text-offwhite lg:text-left p-12 md:p-16">
+              <h6 class="text-xs font-bold text-[#98999A] uppercase">Doc verification</h6>
+              <p class="text-xl mt-4"><span>Is it up to date?</span> Reduce repetitive questions.</p>
+              <p class="text-sm mt-4">Docs can be verified with different validity periods, so your team can finally trust what’s in their knowledge base without double-checking.</p>
+            </div>
+            <div>
+              <img src="./assets/section6/img.png" alt="img" />
+            </div>
+          </div>
+          <div class="bg-white/10 rounded-lg h-full">
+            <div class="text-offwhite lg:text-left p-12 md:p-16">
+              <h6 class="text-xs font-bold text-[#98999A] uppercase">Knowledge Management panel</h6>
+              <p class="text-xl mt-4">Manage at scale.</p>
+              <p class="text-sm mt-4">Slice and dice your docs individually or in groups, all in one panel. Instantly change the owner or status, merge or delete duplicates.</p>
+            </div>
+            <div class="flex justify-end">
+              <img src="./assets/section6/img2.png" alt="img" />
+            </div>
+          </div>
+        </div>
+        <a class="mt-16 text-sm font-inter font-medium text-offwhite flex items-center group">See all features <img class="ml-2 group-hover:ml-4 duration-200 transition-all" src="./assets/section6/arrow.png" alt="arrow icon" /></a>
+      </div>
+    </div>
+    <!-- ======================================================= SECTION #7 ======================================================= -->
+
+    <section class="w-full xl:mt-40 my-16">
+      <div class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0 flex flex-col items-center md:items-start gap-8">
+        <h2 class="text-secondary text-xl font-medium text-center md:text-left md:text-3xl">The Slite edge, in our customers words.</h2>
+        <a href="#" class="w-full bg-white flex flex-col items-center justify-center md:flex-row md:justify-between p-4 md:p-12 rounded-lg gap-4">
+          <div class="text-center md:text-left">
+            <h4 class="text-lg md:text-2xl font-medium">From mess to clarity</h4>
+            <p class="text-xs text-[#98999A] uppercase font-bold">Switched from Notion & Coda</p>
+          </div>
+          <div class="font-medium text-center md:text-left">
+            <h5 class="text-base text-[#2F2F30]/70 ">With Mac Reddin</h5>
+            <p class="text-sm text-[#98999A]">CEO at Commsor</p>
+          </div>
+          <img src="./assets/section7/linkimg.png" alt="link" />
+          <p class="text-lg md:text-2xl font-medium text-secondary text-center">Case study ↗</p>
+        </a>
+        <a href="#" class="w-full bg-white flex flex-col items-center justify-center md:flex-row md:justify-between p-4 md:p-12 rounded-lg gap-4">
+          <div class="text-center md:text-left">
+            <h4 class="text-lg md:text-2xl font-medium">Leveraging AI for growth</h4>
+            <p class="text-xs text-[#98999A] uppercase font-bold">Switched from tettra & google docs</p>
+          </div>
+          <div class="font-medium text-center md:text-left">
+            <h5 class="text-base text-[#2F2F30]/70 ">With Sebastien Gendreau</h5>
+            <p class="text-sm text-[#98999A]">Head of Product at Agorapulse</p>
+          </div>
+          <img src="./assets/section7/linkimg2.png" alt="link" />
+          <p class="text-lg md:text-2xl font-medium text-secondary text-center">Case study ↗</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================================================= SECTION #8 ======================================================= -->
+
+    <section class="w-full xl:mt-40 my-16">
+      <div
+        class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0 flex flex-col items-center gap-8 text-center"
+      >
+        <h2 class="text-secondary text-xl font-medium text-center md:text-4xl">Get going in no time.</h2>
+        <div class="bg-[#FDF9F4] rounded-lg py-4 flex flex-col md:flex-row items-center">
+          <img src="./assets/section8/img.png" alt="img" />
+          <div class="md:text-left mt-4 md:mt-0 p-4 lg:mr-32">
+            <p class="uppercase text-xs md:text-sm text-[#98999A] font-bold">import</p>
+            <h3 class="text-xl font-medium md:text-2xl mt-4">Bring your previous docs</h3>
+            <p class="text-sm text-secondary font-medium mt-4">You don’t need to start from scratch. Bring all your previous docs, notes, and handbooks from Notion, Confluence, or Google Docs, wherever you used to document.</p>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- ======================================================= SECTION #9 ======================================================= -->
+
+    <section class="w-full xl:mt-40 my-16">
+      <div
+        class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0 flex flex-col items-center gap-8 text-center md:text-start"
+      >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:w-3/4">
+        <img src="./assets/section9/img1.png" alt="img" />
+        <div class="flex flex-col items-center justify-center md:items-start">
+          <h3 class="text-sm md:text-base font-bold text-secondary">Templates library</h3>
+          <p class="text-secondary text-xs md:text-sm font-medium">Beat the blank canvas with ready-made templates and keep your docs consistent across all teams.</p>
+          <a href="#" class="flex items-center gap-4 text-secondary font-medium text-xs md:text-sm">Browse template <img src="./assets/section9/arrow-right.png" alt="icon" /></a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:w-3/4">
+        <img src="./assets/section9/img2.png" alt="img" />
+        <div class="flex flex-col items-center justify-center md:items-start">
+          <h3 class="text-sm md:text-base font-bold text-secondary">Slack integration</h3>
+          <p class="text-secondary text-xs md:text-sm font-medium">Search for info living in Slite, sync channels, and get relevant notifications—all from Slack.</p>
+          <a href="#" class="flex items-center gap-4 text-secondary font-medium text-xs md:text-sm">Learn more <img src="./assets/section9/arrow-right.png" alt="icon" /></a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:w-3/4">
+        <img src="./assets/section9/img3.png" alt="img" />
+        <div class="flex flex-col items-center justify-center md:items-start">
+          <h3 class="text-sm md:text-base font-bold text-secondary">Embed</h3>
+          <p class="text-secondary text-xs md:text-sm font-medium">Sync content from all your favorite tools.</p>
+          <a href="#" class="flex items-center gap-4 text-secondary font-medium text-xs md:text-sm">See the full list <img src="./assets/section9/arrow-right.png" alt="icon" /></a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-center md:w-3/4">
+        <img src="./assets/section9/img4.png" alt="img" />
+        <div class="flex flex-col items-center justify-center md:items-start">
+          <h3 class="text-sm md:text-base font-bold text-secondary">Chrome extension</h3>
+          <p class="text-secondary text-xs md:text-sm font-medium">Get instant answers from your knowledge base right in your workflow without app switching.</p>
+          <a href="#" class="flex items-center gap-4 text-secondary font-medium text-xs md:text-sm">I'd like that <img src="./assets/section9/arrow-right.png" alt="icon" /></a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:w-3/4">
+        <img src="./assets/section9/img5.png" alt="img" />
+        <div class="flex flex-col items-center justify-center md:items-start">
+          <h3 class="text-sm md:text-base font-bold text-secondary">Zapier</h3>
+          <p class="text-secondary text-xs md:text-sm font-medium">Make the most of thousands apps and of native tools of Zapier to automate any of your workflow.</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:w-3/4">
+        <img src="./assets/section9/img6.png" alt="img" />
+        <div class="flex flex-col items-center justify-center md:items-start">
+          <h3 class="text-sm md:text-base font-bold text-secondary">API</h3>
+          <p class="text-secondary text-xs md:text-sm font-medium">Easily sync other tools with Slite to create new docs or keep existing ones up to date. Pull docs where you need them or search instantly.</p>
+          <a href="#" class="flex items-center gap-4 text-secondary font-medium text-xs md:text-sm">I'd like that <img src="./assets/section9/arrow-right.png" alt="icon" /></a>
+        </div>
+      </div>
+    </div>
+      </section>
+
+    <!-- ======================================================= SECTION #10 ======================================================= -->
+
+    <section class="w-full xl:mt-40 my-16">
+      <div
+        class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0 flex flex-col items-center gap-8"
+      >
+        <h2 class="text-secondary text-xl font-medium text-center md:text-4xl">Growing teams see the difference.</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+          <div class="bg-white rounded-lg p-4 md:p-8 flex flex-col items-center justify-between gap-8">
+            <p class="text-seondary text-base font-medium">We just switched from Notion to Slite—you’ll go big, keep doing what you’re doing!</p>
+            <div class="flex justify-between items-center w-full">
+              <div class="uppercase text-secondary text-xs">
+                <p class="font-bold">Hugo Pereira</p>
+                <p class="font-medium">CEO, Ritmoo</p>
+              </div>
+              <img class="" src="./assets/section10/avatar1.png" alt="avatar" />
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 md:p-8 flex flex-col items-center justify-between gap-8">
+            <p class="text-seondary text-base font-medium">Excellent product. A lot faster than Notion. We love it.</p>
+            <div class="flex justify-between items-center w-full">
+              <div class="uppercase text-secondary text-xs">
+                <p class="font-bold">Tom potanski</p>
+                <p class="font-medium">founDer, DevsData LLC</p>
+              </div>
+              <img class="" src="./assets/section10/avatar2.png" alt="avatar" />
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 md:p-8 flex flex-col items-center justify-between gap-8">
+            <p class="text-seondary text-base font-medium">Slite is becoming a Work OS and a solid Notion alternative.</p>
+            <div class="flex justify-between items-center w-full">
+              <div class="uppercase text-secondary text-xs">
+                <p class="font-bold">Amokrane Tamine</p>
+                <p class="font-medium">Product manager</p>
+              </div>
+              <img class="" src="./assets/section10/avatar3.png" alt="avatar" />
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 md:p-8 flex flex-col items-center justify-between gap-8">
+            <p class="text-seondary text-base font-medium">Slite doesn't get in the way of writing, which is crucial when you want it to become a knowledge hub for the company. There can't be any friction for documenting, an Slite does that really well.</p>
+            <div class="flex justify-between items-center w-full">
+              <div class="uppercase text-secondary text-xs">
+                <p class="font-bold">Yoran Brondsema</p>
+                <p class="font-medium">co-founder, curvo</p>
+              </div>
+              <img class="" src="./assets/section10/avatar4.png" alt="avatar" />
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 md:p-8 flex flex-col items-center justify-between gap-8">
+            <p class="text-seondary text-base font-medium">So exciting to see a company in doc/productivity space stick to where it can shine. The doc status is awesome and is one of the places where Notion falls short. The notification to hint what docs are out-of-date is really clever.</p>
+            <div class="flex justify-between items-center w-full">
+              <div class="uppercase text-secondary text-xs">
+                <p class="font-bold">Matt Roskovec</p>
+                <p class="font-medium">Product manager, pitch</p>
+              </div>
+              <img class="" src="./assets/section10/avatar5.png" alt="avatar" />
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 md:p-8 flex flex-col items-center justify-between gap-8">
+            <p class="text-seondary text-base font-medium">Honestly, it's quite a joy working with Slite (...) I would recommend it for companies who search for a knowledge base over Notion (...) They nail content on a different level.</p>
+            <div class="flex justify-between items-center w-full">
+              <div class="uppercase text-secondary text-xs">
+                <p class="font-bold">Roman kuba</p>
+                <p class="font-medium">VP engineering, tset</p>
+              </div>
+              <img class="" src="./assets/section10/avatar6.png" alt="avatar" />
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 md:p-8 flex flex-col items-center justify-between gap-8">
+            <p class="text-seondary text-base font-medium">With 20 years in software development and support, I've worked with a number of wiki platforms. Slite is by far the easiest to enter information into and format it in a human readable way. This has led to widespread company utilization across departments, making it an invaluable business tool.</p>
+            <div class="flex justify-between items-center w-full">
+              <div class="uppercase text-secondary text-xs">
+                <p class="font-bold">Rosie Marshall</p>
+                <p class="font-medium">Product Manager, Clear Impact</p>
+              </div>
+              <img class="" src="./assets/section10/avatar7.png" alt="avatar" />
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 md:p-8 flex flex-col items-center justify-between gap-8">
+            <p class="text-seondary text-base font-medium">Just when I thought I had lost the battle against keeping track of all the documentation I need to keep up to dated with! Thanks Slite! You guys keep amazing me. I feel like a 6 y.o. watching a David Copperfield show! 🪄</p>
+            <div class="flex justify-between items-center w-full">
+              <div class="uppercase text-secondary text-xs">
+                <p class="font-bold">Samanta Velho</p>
+                <p class="font-medium">product manager, tymeshift</p>
+              </div>
+              <img class="" src="./assets/section10/avatar8.png" alt="avatar" />
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 md:p-8 flex flex-col items-center justify-between gap-8">
+            <p class="text-seondary text-base font-medium">A modern document management platform with focus on utility over excess. Slite focuses on a niche of document management. Hierarchical views, accesses, spaces are easy to organize, search and sift.</p>
+            <div class="flex justify-between items-center w-full">
+              <div class="uppercase text-secondary text-xs">
+                <p class="font-bold">Dushyant Pathak</p>
+                <p class="font-medium">software engineer, deutsche Bank</p>
+              </div>
+              <img class="" src="./assets/section10/avatar9.png" alt="avatar" />
+            </div>
+          </div>
+        </div>
+          <a href="#" class="flex items-center gap-4 text-secondary font-medium text-xs md:text-sm text-center">I'd like that <img src="./assets/section9/arrow-right.png" alt="icon" /></a>
+    </div>
+      </section>
+
+    <!-- ======================================================= SECTION #11 ======================================================= -->
+
+    <section class="w-full xl:mt-40 my-16">
+      <div
+        class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0 flex flex-col items-center lg:items-start gap-8"
+      >
+      <div class="lg:py-16">
+        <div class="lg:px-32">
+        <h2 class="text-2xl text-secondary font-medium">Top-rated on G2.</h2>
+        <p class="text-[15px] font-medium  text-secondary">Slite has consistently been recognized as the industry leader on G2.</p>
+        </div>
+      </div>
+      <div class="bg-[#FDF9F4] flex flex-col items-center gap-8 p-4 lg:p-16 w-full rounded-lg">
+        <p class="text-base font-medium text-secondary">And many more 5 star reviews.</p>
+        <div class="flex flex-col items-center md:flex-row gap-8">
+          <img src="./assets/section11/image.png" alt="ratings" />
+          <img src="./assets/section11/image2.png" alt="ratings" />
+          <img src="./assets/section11/image3.png" alt="ratings" />
+        </div>
+      </div>
+    </div>
+      </section>
+
+    <!-- ======================================================= SECTION #12 ======================================================= -->
+
+    <section class="w-full xl:mt-40 my-16">
+      <div
+        class="max-w-6xl mx-auto px-3 lg:px-6 xl:px-0 flex flex-col items-center gap-8 text-center"
+      >
+      <div class="text-center flex flex-col items-center justify-center">
+        <h2 class="text-secondary text-xl font-medium text-center md:text-4xl">Growing teams see the difference.</h2>
+        <p class="text-xl font-medium text-secondary mt-4">Join 200,000+ growing teams who have built a single source of truth with Slite.</p>
+      </div>
+      <div class="flex flex-col items-center gap-8 md:flex-row">
+        <button class="bg-[#176AE5] p-4 px-6 rounded-full text-white">Try Slite for free</button>
+        <button>Talk to us</button>
+      </div>
+      <img src="./assets/section12/img.png" alt="img" />
+    </div>
+      </section>
+
+    <!-- ======================================================= FOOTER ======================================================= -->
+
+    <section class="w-full xl:mt-40 my-16">
+      <div
+        class="container mx-auto px-3 lg:px-6 xl:px-0 flex flex-col items-center xl:flex-row xl:items-start"
+      >
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+      <div>
+        <h6 class="text-secondary font-medium text-[14.5px]">What it's for</h6>
+        <ul class="mt-4 flex flex-col gap-2">
+          <li class="text-xs text-secondary font-normal"><a href="#">Knowledge base</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Project documentation</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Employee Onboarding</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Meeting notes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-secondary font-medium text-[14.5px]">How it works</h6>
+        <ul class="mt-4 flex flex-col gap-2">
+          <li class="text-xs text-secondary font-normal"><a href="#">Features</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Integrations</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Pricing</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">What's new</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Help center</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Contact support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-secondary font-medium text-[14.5px]">Resources</h6>
+        <ul class="mt-4 flex flex-col gap-2">
+          <li class="text-xs text-secondary font-normal"><a href="#">Templates</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Learn</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Knowledge Management Guide</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Startup Bibles</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Download apps</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Chrome extension</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-secondary font-medium text-[14.5px]">Slite</h6>
+        <ul class="mt-4 flex flex-col gap-2">
+          <li class="text-xs text-secondary font-normal"><a href="#">About us</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Blog</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Careers</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Customers</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Partnerships</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Press kit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-secondary font-medium text-[14.5px]">Compare</h6>
+        <ul class="mt-4 flex flex-col gap-2">
+          <li class="text-xs text-secondary font-normal"><a href="#">Notion</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Confluence</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Guru</a></li>
+          <li class="text-xs text-secondary font-normal"><a href="#">Google Docs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="lg:w-1/3 flex flex-col gap-4">
+      <p class="text-secondary text-sm font-medium">Readings about the future of team knowledge.</p>
+      <form class="">
+        <div class="relative">
+        <input type="text" placeholder="What's your email?" class="w-full  p-4 placeholder:text-xs text-xs placeholder:text-[2F2F30]/50 text-[2F2F30]/50 bg-transparent border border-secondary rounded-full"  />
+        <button class="absolute text-base text-white bg-[#176AE5] py-3 px-4 h-full  rounded-full right-1">→</button></div>
+      </form>
+      <p class="text-secondary text-xs ">Thoughtful insights and actionable learnings on how to bring your team on the same page. No fluff, no spam, no corporate filler. Just a friendly letter, twice a month.</p>
+      <div><img class="" src="./assets/footer/icons.png" alt="icons" /></div>
+    </div>
+    
+    </div>
+    </div>
+      </section>
+
   </body>
 </html>
